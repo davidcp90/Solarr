@@ -1,14 +1,10 @@
 package com.torre.keplerr	
 import org.scalatra._
-import org.scalatra.json._
 import org.json4s.{DefaultFormats, Formats}
+import org.scalatra.json._
 
-class Solarr extends SolarrStack with JacksonJsonSupport {
-	case class Person(id: Int, name: String)
-	//filter to make the content type json
-	before() {
-    		contentType = formats("json")
- 	 }
+class Solarr extends ScalatraServlet {
+  case class Person(id: Int, name: String)
 	 get("/"){
   		PersonData.all
 	}	
@@ -20,7 +16,4 @@ class Solarr extends SolarrStack with JacksonJsonSupport {
 	}
 	
 }
-// Sets up automatic case class to JSON output serialization, required by
-// the JValueResult trait.
-protected implicit val jsonFormats: Formats = DefaultFormats
 
