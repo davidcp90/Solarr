@@ -1,4 +1,4 @@
-package com.example.app
+package com.torre.keplerr
 
 import org.scalatra._
 import scalate.ScalateSupport
@@ -7,7 +7,7 @@ import org.fusesource.scalate.layout.DefaultLayoutStrategy
 import javax.servlet.http.HttpServletRequest
 import collection.mutable
 
-trait KeplerrscalatraStack extends ScalatraServlet with ScalateSupport {
+trait SolarrStack extends ScalatraServlet with ScalateSupport {
 
   notFound {
     // remove content type in case it was set through an action

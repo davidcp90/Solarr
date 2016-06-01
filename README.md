@@ -1,9 +1,9 @@
-# keplerr-scalatra #
+# Solarr #
 
 ## Build & Run ##
 
 ```sh
-$ cd keplerr-scalatra
+$ cd Solarr
 $ ./sbt
 > jetty:start
 > browse

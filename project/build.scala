@@ -6,15 +6,15 @@ import com.earldouglas.xwp.JettyPlugin
 import com.mojolly.scalate.ScalatePlugin._
 import ScalateKeys._
 
-object KeplerrscalatraBuild extends Build {
-  val Organization = "keplerr"
-  val Name = "keplerr-scalatra"
-  val Version = "0.0.1"
+object SolarrBuild extends Build {
+  val Organization = "com.bunnyinc.keplerr"
+  val Name = "Solarr"
+  val Version = "0.1.0-SNAPSHOT"
   val ScalaVersion = "2.11.8"
   val ScalatraVersion = "2.4.1"
 
   lazy val project = Project (
-    "keplerr-scalatra",
+    "solarr",
     file("."),
     settings = ScalatraPlugin.scalatraSettings ++ scalateSettings ++ Seq(
       organization := Organization,

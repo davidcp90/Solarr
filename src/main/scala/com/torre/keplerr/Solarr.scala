@@ -1,8 +1,8 @@
-package com.example.app
+package com.torre.keplerr
 
 import org.scalatra._
 
-class kepler-servlet extends KeplerrscalatraStack {
+class Solarr extends SolarrStack {
 
   get("/") {
     <html>
