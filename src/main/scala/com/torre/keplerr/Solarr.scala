@@ -3,9 +3,14 @@ import org.scalatra._
 import org.json4s.{DefaultFormats, Formats}
 import org.scalatra.json._
 
-class Solarr extends SolarrStack {
+class Solarr extends SolarrStack with JacksonJsonSupport {
+  protected implicit lazy val jsonFormats: Formats = DefaultFormats
+  before() {
+    contentType = formats("json")
+  }
+
   case class Person(id: Int, name: String)
-	 get("/"){
+  get("/"){
   		PersonData.all
 	}	
 	object PersonData {
