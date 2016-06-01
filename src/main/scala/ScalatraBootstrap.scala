@@ -1,9 +1,13 @@
 import com.torre.keplerr._
-import org.scalatra._
+import org.scalatra.LifeCycle
 import javax.servlet.ServletContext
 
 class ScalatraBootstrap extends LifeCycle {
+
+  implicit val swagger = new SolarrSwagger
+
   override def init(context: ServletContext) {
-    context.mount(new Solarr, "/*")
+    context.mount(new Solarr, "/persons", "persons")
+    context.mount (new ResourcesApp, "/api-docs")
   }
 }

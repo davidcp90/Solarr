@@ -67,3 +67,7 @@ jrebel.lic
 
 # paulp script
 /.lib/
+
+#DS
+./../.DS_Store
+../.DS_Store

@@ -31,7 +31,8 @@ object SolarrBuild extends Build {
         "org.eclipse.jetty" % "jetty-webapp" % "9.2.15.v20160210" % "container",
         "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided",
         "org.scalatra" %% "scalatra-json" % "2.4.0.RC1",
-        "org.json4s"   %% "json4s-jackson" % "3.3.0.RC1"
+        "org.json4s"   %% "json4s-native" % "3.3.0.RC1",
+        "org.scalatra" %% "scalatra-swagger"  % "2.4.0.RC1"
       ),
       scalateTemplateConfig in Compile <<= (sourceDirectory in Compile){ base =>
         Seq(
