@@ -3,7 +3,7 @@ import org.scalatra._
 import org.json4s.{DefaultFormats, Formats}
 import org.scalatra.json._
 
-class Solarr extends ScalatraServlet {
+class Solarr extends SolarrStack {
   case class Person(id: Int, name: String)
 	 get("/"){
   		PersonData.all
