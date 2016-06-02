@@ -1,4 +1,4 @@
-Scalatra Swagger Flowershop
+Solarr API 
 ===========================
 
 Corresponds to the guide at [http://scalatra.org/2.4/guides/swagger.html](http://scalatra.org/2.4/guides/swagger.html)
@@ -9,8 +9,6 @@ to demonstrate Scalatra's Swagger functionality.
 ## Build & Run ##
 
 ```sh
-$ git clone https://github.com/scalatra/scalatra-website-examples.git
-$ cd scalatra-website-examples/2.4/swagger-example
 $ chmod +x sbt
 $ ./sbt
 > container:start
@@ -22,4 +20,4 @@ The Pet Store documentation is showing because http://petstore.swagger.wordnik.c
 
 Paste http://localhost:8080/api-docs/resources.json - into the URL field, delete the "special-key" key, then press the "Explore" button. You'll see a Swaggerized view of the API documentation for this application. Try clicking on the "GET /flowers" route to expand the operations underneath it, and then entering the word "rose" into the input box for the "name" parameter.
 
-(c) Dave Hrycyszyn, 2013
+(c) Keplerr
