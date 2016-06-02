@@ -14,10 +14,8 @@ $ ./sbt
 > container:start
 ```
 
-Open your browser to http://petstore.swagger.wordnik.com/, and you'll see the default Swagger demo application - a Pet Store - and you'll be able to browse its documentation. 
+Open your browser to http://petstore.swagger.io/, and you'll see the default Swagger demo application - a Pet Store - and you'll be able to browse its documentation. 
 
-The Pet Store documentation is showing because http://petstore.swagger.wordnik.com/api/resources.json is entered into the URL field by default.
-
-Paste http://localhost:8080/api-docs/resources.json - into the URL field, delete the "special-key" key, then press the "Explore" button. You'll see a Swaggerized view of the API documentation for this application. Try clicking on the "GET /flowers" route to expand the operations underneath it, and then entering the word "rose" into the input box for the "name" parameter.
+Paste http://localhost:8080/api-docs/resources.json - into the URL field, delete the "special-key" key, then press the "Explore" button. You'll see a Swaggerized view of the API documentation for this application. Try clicking on the "GET /persons" route to expand the operations underneath it, and then entering the word "rose" into the input box for the "name" parameter.
 
 (c) Keplerr
