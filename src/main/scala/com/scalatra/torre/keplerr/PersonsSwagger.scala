@@ -1,4 +1,4 @@
-import com.scalatra.torre.keplerr._
+package com.scalatra.torre.keplerr
 
 import org.scalatra.ScalatraServlet
 import org.scalatra.swagger.{ApiInfo, NativeSwaggerBase, Swagger}

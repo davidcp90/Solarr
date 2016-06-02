@@ -1,4 +1,4 @@
-import com.scalatra.torre.keplerr._
+package com.scalatra.torre.keplerr
 
 import org.scalatra._
 
@@ -26,7 +26,7 @@ class PersonsController(implicit val swagger: Swagger) extends ScalatraServlet w
   }
 
   val getPersons =
-    (apiOperation[List[Flower]]("getPersons")
+    (apiOperation[List[Person]]("getPersons")
       summary "Show all persons"
       notes "Shows all the persons in the map. You can search it too."
       parameter queryParam[Option[String]]("name").description("A name to search for"))
@@ -40,7 +40,7 @@ class PersonsController(implicit val swagger: Swagger) extends ScalatraServlet w
 
 
   val findBySlug =
-    (apiOperation[Flower]("findBySlug")
+    (apiOperation[Person]("findBySlug")
       summary "Find person by its slug"
       parameters (
       pathParam[String]("slug").description("Slug of person that needs to be fetched")))
