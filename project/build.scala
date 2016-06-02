@@ -7,13 +7,13 @@ import ScalateKeys._
 
 object SolarrBuild extends Build {
   val Organization = "com.torre"
-  val Name = "Flowershop"
+  val Name = "solarr"
   val Version = "0.1.0-SNAPSHOT"
   val ScalaVersion = "2.11.7"
   val ScalatraVersion = "2.4.+"
 
   lazy val project = Project (
-    "flowershop",
+    "solarr",
     file("."),
     settings = ScalatraPlugin.scalatraWithJRebel ++ scalateSettings ++ Seq(
       organization := Organization,
